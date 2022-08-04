@@ -2,31 +2,30 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <!--    <link href="../static/css/test.css" rel="stylesheet"/>-->
+    <style>
+        .test {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
     <title>Hello</title>
 </head>
 <body>
 Hello World!
-
 <br><br>
-<form th:action="@{/logout}" th:method="POST">
-    <input type="submit" value="Выйти" />
+<div class="test"></div>
+<form class="From" th:action="@{/logout}" th:method="POST">
+    <input type="submit" value="Выйти"/>
 </form>
+
+
+<script>
+
+    console.log("Hello world")
+</script>
+
+
 </body>
 </html>
-
-
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Hello</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--Hello world!-->
-<!--<form th:action="@{/logout}" th:method="POST">-->
-<!--    <input type="submit" value="Logout" />-->
-<!--</form>-->
-
-<!--</body>-->
-<!--</html>-->
