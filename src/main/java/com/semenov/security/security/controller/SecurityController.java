@@ -14,16 +14,14 @@ public class SecurityController {
     private final AdminService adminService;
 
     @GetMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "hello";
     }
 
 
     @GetMapping("/admin")
-    public String adminPage(){
+    public String adminPage() {
         adminService.doAdminStuff();
         return "admin";
     }
-
-
 }
